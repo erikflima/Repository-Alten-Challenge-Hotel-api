@@ -54,6 +54,8 @@ You’ve been given the responsibility to develop a booking API for the very las
  
   ➡️ http://localhost:8080/swagger-ui.html
 
+<br>
+
 #### ✅ Database diagram image:
  
   ➡️ 
@@ -84,18 +86,23 @@ The application is now online, hosted on the Heroku platform. APIs can be consum
   
   ➡️ MySQL 8.0.31 or higher ( https://dev.mysql.com/downloads/installer/ )
   
+<br>
 
 #### ✅ Recommended tools:  
 
-    ➡️ Environment with java development kit 8 
+  ➡️ Spring Tools 4 for Eclipse ( https://spring.io/tools )
     
-    ➡️ Environment with java development kit 8
+  ➡️ MySQL Workbench ( https://dev.mysql.com/downloads/workbench/ )
   
-  
+<br>
+
 #### ✅ Run the project
   
- Step 1: Create a database with whatever name you want.
- Step 2: 
+  ➡️ Step 1: <b>Create a database</b> in MySQL, with whatever name you want.
+  
+  ➡️ Step 2: Fill in the connection information in the project's <b><a href="url">"application.properties"</a></b> file. 
+  
+  ➡️ Step 3: Run the spring boot project.
 
 ---
 
@@ -112,12 +119,12 @@ The application is now online, hosted on the Heroku platform. APIs can be consum
 
 #### Below is a file that you can import into postman. This file has the list of all application endpoints, and also with request examples:
 
-#### ✅ Online request list (To import into Postman):
+#### ✅ Online collection/request list (To import into Postman):
   ➡️ 
 
-#### ✅ Localhost request list (To import into Postman):
+#### ✅ Localhost collection/request list (To import into Postman):
   ➡️ 
 
 ---
 
-
+# Thanks 🤓
