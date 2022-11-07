@@ -1,0 +1,843 @@
+{
+	"info": {
+		"_postman_id": "f3484221-b477-409a-835b-710c329f384c",
+		"name": "Online | Requests - Cancun Hotel Booking API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Documentation HTML - /Swagger",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://alten-challenge-hotel-api.herokuapp.com/swagger-ui.html",
+					"protocol": "https",
+					"host": [
+						"alten-challenge-hotel-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"swagger-ui.html"
+					]
+				},
+				"description": "Como chamar o endpoint de inserir item no pedido:\r\n\r\n Primeiro devo chamar os endpoints abaixo para coletar os dados do body:\r\n  - Passo 1 > Pegar um \"itemPedidoVendaBean\" -> Chamar o endpoint de buscarProdutoPeloCodigo\r\n  - Passo 2 > Pegar um \"pedidoVendaBean\"     -> Chamar o endpoint de iniciarVenda\r\n  - Passo 3 > Pegar um \"usuarioVa\"           -> Chamar o endpoint de de login\r\n  - Passo 4 > listaLoteEstoqueBean -> null"
+			},
+			"response": []
+		},
+		{
+			"name": "Documentation Json - /Swagger",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://alten-challenge-hotel-api.herokuapp.com/v2/api-docs",
+					"protocol": "https",
+					"host": [
+						"alten-challenge-hotel-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"v2",
+						"api-docs"
+					]
+				},
+				"description": "Como chamar o endpoint de inserir item no pedido:\r\n\r\n Primeiro devo chamar os endpoints abaixo para coletar os dados do body:\r\n  - Passo 1 > Pegar um \"itemPedidoVendaBean\" -> Chamar o endpoint de buscarProdutoPeloCodigo\r\n  - Passo 2 > Pegar um \"pedidoVendaBean\"     -> Chamar o endpoint de iniciarVenda\r\n  - Passo 3 > Pegar um \"usuarioVa\"           -> Chamar o endpoint de de login\r\n  - Passo 4 > listaLoteEstoqueBean -> null"
+			},
+			"response": []
+		},
+		{
+			"name": "Reservation - /checkRoomAvailability",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"checkInDate\": \"2022-11-14\",\n\t\"checkOutDate\" : \"2022-11-14\"\n}"
+				},
+				"url": {
+					"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/reservation/checkroomavailability",
+					"protocol": "https",
+					"host": [
+						"alten-challenge-hotel-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"reservation",
+						"checkroomavailability"
+					]
+				},
+				"description": "Chamada do endpoint que serve para cadastrar uma Pessoa."
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"checkInDate\": \"2022-11-14\",\n\t\"checkOutDate\" : \"2022-11-14\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/reservation/checkroomavailability",
+							"protocol": "https",
+							"host": [
+								"alten-challenge-hotel-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"reservation",
+								"checkroomavailability"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Reservation - /findById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/reservation/findbyid/1",
+					"protocol": "https",
+					"host": [
+						"alten-challenge-hotel-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"reservation",
+						"findbyid",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/reservation/findbyid/1",
+							"protocol": "https",
+							"host": [
+								"alten-challenge-hotel-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"reservation",
+								"findbyid",
+								"1"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Reservation - /findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/reservation/findall",
+					"protocol": "https",
+					"host": [
+						"alten-challenge-hotel-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"reservation",
+						"findall"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/reservation/findall",
+							"protocol": "https",
+							"host": [
+								"alten-challenge-hotel-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"reservation",
+								"findall"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Reservation - /placeAReservation",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"checkInDate\": \"2022-11-21\",\n\t\"checkOutDate\" : \"2022-11-22\",\n    \"clientId\" : 1\n}"
+				},
+				"url": {
+					"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/reservation/placeareservation",
+					"protocol": "https",
+					"host": [
+						"alten-challenge-hotel-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"reservation",
+						"placeareservation"
+					]
+				},
+				"description": "Chamada do endpoint que serve para cadastrar uma Pessoa."
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"checkInDate\": \"2022-11-21\",\n\t\"checkOutDate\" : \"2022-11-22\",\n    \"clientId\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/reservation/placeareservation",
+							"protocol": "https",
+							"host": [
+								"alten-challenge-hotel-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"reservation",
+								"placeareservation"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Reservation - /cancel",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/reservation/cancel/1",
+					"protocol": "https",
+					"host": [
+						"alten-challenge-hotel-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"reservation",
+						"cancel",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/reservation/cancel/1",
+							"protocol": "https",
+							"host": [
+								"alten-challenge-hotel-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"reservation",
+								"cancel",
+								"1"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Reservation - /modify",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"checkInDate\": \"2022-11-25\",\n\t\"checkOutDate\" : \"2022-11-26\"\n}"
+				},
+				"url": {
+					"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/reservation/modify/1",
+					"protocol": "https",
+					"host": [
+						"alten-challenge-hotel-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"reservation",
+						"modify",
+						"1"
+					]
+				},
+				"description": "Chamada do endpoint que serve para atualizar uma Pessoa."
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"checkInDate\": \"2022-11-25\",\n    \"checkOutDate\": \"2022-11-26\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/reservation/modify/1",
+							"protocol": "https",
+							"host": [
+								"alten-challenge-hotel-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"reservation",
+								"modify",
+								"1"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Client - /register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Erik de Lima\",\n\t\"email\" : \"erik@gmail.com\",\n    \"phone\" : \"5511941054345\"\n}"
+				},
+				"url": {
+					"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/client/register",
+					"protocol": "https",
+					"host": [
+						"alten-challenge-hotel-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"client",
+						"register"
+					]
+				},
+				"description": "Chamada do endpoint que serve para cadastrar uma Pessoa."
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Erik de Lima\",\n\t\"email\" : \"erik@gmail.com\",\n    \"phone\" : \"5511941054345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/client/register",
+							"protocol": "https",
+							"host": [
+								"alten-challenge-hotel-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"client",
+								"register"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Client - /findById",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/client/findbyid/1",
+					"protocol": "https",
+					"host": [
+						"alten-challenge-hotel-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"client",
+						"findbyid",
+						"1"
+					]
+				},
+				"description": "Como chamar o endpoint de inserir item no pedido:\r\n\r\n Primeiro devo chamar os endpoints abaixo para coletar os dados do body:\r\n  - Passo 1 > Pegar um \"itemPedidoVendaBean\" -> Chamar o endpoint de buscarProdutoPeloCodigo\r\n  - Passo 2 > Pegar um \"pedidoVendaBean\"     -> Chamar o endpoint de iniciarVenda\r\n  - Passo 3 > Pegar um \"usuarioVa\"           -> Chamar o endpoint de de login\r\n  - Passo 4 > listaLoteEstoqueBean -> null"
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/client/findbyid/1",
+							"protocol": "https",
+							"host": [
+								"alten-challenge-hotel-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"client",
+								"findbyid",
+								"1"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Client - /findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/client/findall",
+					"protocol": "https",
+					"host": [
+						"alten-challenge-hotel-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"client",
+						"findall"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/client/findall",
+							"protocol": "https",
+							"host": [
+								"alten-challenge-hotel-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"client",
+								"findall"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Client - /delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/client/delete/10",
+					"protocol": "https",
+					"host": [
+						"alten-challenge-hotel-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"client",
+						"delete",
+						"10"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/client/delete/10",
+							"protocol": "https",
+							"host": [
+								"alten-challenge-hotel-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"client",
+								"delete",
+								"10"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Client - /modify",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Lima Erik\",\n\t\"email\" : \"erik@eriklima.com\",\n    \"phone\" : \"11941034567\"\n}"
+				},
+				"url": {
+					"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/client/modify/1",
+					"protocol": "https",
+					"host": [
+						"alten-challenge-hotel-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"client",
+						"modify",
+						"1"
+					]
+				},
+				"description": "Chamada do endpoint que serve para atualizar uma Pessoa."
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Lima Erik\",\n\t\"email\" : \"erik@eriklima.com\",\n    \"phone\" : \"11941034567\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/client/modify/1",
+							"protocol": "https",
+							"host": [
+								"alten-challenge-hotel-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"client",
+								"modify",
+								"1"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Room- /findById",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/room/findbyid/1",
+					"protocol": "https",
+					"host": [
+						"alten-challenge-hotel-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"room",
+						"findbyid",
+						"1"
+					]
+				},
+				"description": "Como chamar o endpoint de inserir item no pedido:\r\n\r\n Primeiro devo chamar os endpoints abaixo para coletar os dados do body:\r\n  - Passo 1 > Pegar um \"itemPedidoVendaBean\" -> Chamar o endpoint de buscarProdutoPeloCodigo\r\n  - Passo 2 > Pegar um \"pedidoVendaBean\"     -> Chamar o endpoint de iniciarVenda\r\n  - Passo 3 > Pegar um \"usuarioVa\"           -> Chamar o endpoint de de login\r\n  - Passo 4 > listaLoteEstoqueBean -> null"
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://alten-challenge-hotel-api.herokuapp.com/api/room/findbyid/1",
+							"protocol": "https",
+							"host": [
+								"alten-challenge-hotel-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"room",
+								"findbyid",
+								"1"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}

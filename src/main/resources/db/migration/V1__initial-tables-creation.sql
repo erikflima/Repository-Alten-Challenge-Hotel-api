@@ -1,9 +1,3 @@
--- MySQL dump 10.13  Distrib 8.0.31, for Win64 (x86_64)
---
--- Host: 127.0.0.1    Database: db_cancun_hotel_api
--- ------------------------------------------------------
--- Server version	8.0.31
-
 DROP TABLE IF EXISTS `client`;
 CREATE TABLE `client` (
   `id` bigint NOT NULL AUTO_INCREMENT,
