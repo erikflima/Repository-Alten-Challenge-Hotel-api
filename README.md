@@ -58,15 +58,15 @@ You’ve been given the responsibility to develop a booking API for the very las
 
 #### ✅ Database diagram image:
  
-  ➡️ 
+  ➡️ https://github.com/erikflima/Repository-Alten-Challenge-Hotel-api/blob/main/documentation-files/Database%20files/Data%20base%20-%20EER%20Diagram.pdf
 
 #### ✅ Database diagram for MySQL Workbench:
  
-  ➡️ 
+  ➡️ https://github.com/erikflima/Repository-Alten-Challenge-Hotel-api/blob/main/documentation-files/Database%20files/Data%20base%20-%20EER%20Diagram%20(open%20using%20MySQL%20Workbench).mwb
   
 #### ✅ Database SQL script:
  
-  ➡️ 
+  ➡️ https://github.com/erikflima/Repository-Alten-Challenge-Hotel-api/blob/main/src/main/resources/db/migration/V1__initial-tables-creation.sql
 
 ---
 
@@ -100,7 +100,7 @@ The application is now online, hosted on the Heroku platform. APIs can be consum
   
   ➡️ Step 1: <b>Create a database</b> in MySQL, with whatever name you want.
   
-  ➡️ Step 2: Fill in the connection information in the project's <b><a href="url">"application.properties"</a></b> file. 
+  ➡️ Step 2: Fill in the connection information in the project's <b><a href="https://github.com/erikflima/Repository-Alten-Challenge-Hotel-api/blob/main/src/main/resources/application.properties">"application.properties"</a></b> file. 
   
   ➡️ Step 3: Run the spring boot project.
 
@@ -120,11 +120,12 @@ The application is now online, hosted on the Heroku platform. APIs can be consum
 #### Below is a file that you can import into postman. This file has the list of all application endpoints, and also with request examples:
 
 #### ✅ Online collection/request list (To import into Postman):
-  ➡️ 
+  ➡️ https://github.com/erikflima/Repository-Alten-Challenge-Hotel-api/blob/main/documentation-files/Postman%20files/Online%20-%20Requests%20-%20Cancun%20Hotel%20Booking%20API.postman_collection.json
 
 #### ✅ Localhost collection/request list (To import into Postman):
-  ➡️ 
+  ➡️ https://github.com/erikflima/Repository-Alten-Challenge-Hotel-api/blob/main/documentation-files/Postman%20files/Local%20-%20Requests%20-%20Cancun%20Hotel%20Booking%20API.postman_collection.json
 
 ---
 
-# Thanks 🤓
+# Thanks🤓🍁
+ #Never Give up!
