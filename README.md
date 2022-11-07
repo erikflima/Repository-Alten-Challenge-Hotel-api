@@ -6,7 +6,7 @@ Post-Covid scenario:
 People are now free to travel everywhere but because of the pandemic, a lot of hotels went bankrupt. Some former famous travel places are left with only one hotel.
 You’ve been given the responsibility to develop a booking API for the very last hotel in Cancun.
 
-✅ The requirements are:
+#### ✅ The requirements are:
 
   ➡️ API will be maintained by the hotel’s IT department.
 
@@ -28,68 +28,96 @@ You’ve been given the responsibility to develop a booking API for the very las
 
 ### 💻 Technologies
 
-✅ Technologies used in the project:
+#### ✅ Technologies used in the project:
 
   ➡️ Java
   
   ➡️ Spring | Spring Boot
   
+  ➡️ JPA | Hibernate
+  
   ➡️ MySQL
+ 
+  ➡️ Git
+  
+  ➡️ Heroku
   
 ---
 
-### 💻 Documentation
+### 📝 Documentation and info
 
- - Online api documentation
- - Local api documentation
+#### ✅ Online API documentation:
  
+  ➡️ https://alten-challenge-hotel-api.herokuapp.com/swagger-ui.html
+ 
+#### ✅ Localhost API documentation (In case the application is running locally):
+ 
+  ➡️ http://localhost:8080/swagger-ui.html
 
-Database
- - Diagram
- - SQL Files
+#### ✅ Database diagram image:
+ 
+  ➡️ 
 
+#### ✅ Database diagram for MySQL Workbench:
+ 
+  ➡️ 
+  
+#### ✅ Database SQL script:
+ 
+  ➡️ 
+
+---
+
+### ⚙️How to run the project | Online
+
+The application is now online, hosted on the Heroku platform. APIs can be consumed at any time. For that, consult the documentation:
+#### ✅ Online API documentation:
+  ➡️ https://alten-challenge-hotel-api.herokuapp.com/swagger-ui.html
+  
+---
+
+### ⚙️How to run the project | Local
+
+#### ✅ Prerequisites:
+
+  ➡️ Environment with java development kit 8 ( https://www.oracle.com/br/java/technologies/javase/javase8-archive-downloads.html )
+  
+  ➡️ MySQL 8.0.31 or higher ( https://dev.mysql.com/downloads/installer/ )
+  
+
+#### ✅ Recommended tools:  
+
+    ➡️ Environment with java development kit 8 
+    
+    ➡️ Environment with java development kit 8
+  
+  
+#### ✅ Run the project
+  
+ Step 1: Create a database with whatever name you want.
+ Step 2: 
 
 ---
 
-### 💻How to run the project | Local
 
- - Prerequisites
-
-
----
-
-### 💻How to run the project | Online
-
- - Prerequisites
-
-
----
 
 ### 💻 Consuming the API
 
-Postman 
- - file example
+#### I recommend using postman to consume the API:
 
+#### ✅ Postman (App or on the web):
+  ➡️ https://www.postman.com/downloads/
+  
+<br>
 
----
+#### Below is a file that you can import into postman. This file has the list of all application endpoints, and also with request examples:
 
-### 💻Topic
+#### ✅ Online request list (To import into Postman):
+  ➡️ 
 
-text
-
-
----
-
-### 💻Topic
-
-text
-
+#### ✅ Localhost request list (To import into Postman):
+  ➡️ 
 
 ---
 
-### 💻Topic
 
-text
-
-
----
