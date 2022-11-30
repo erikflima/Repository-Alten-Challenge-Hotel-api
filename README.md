@@ -1,4 +1,4 @@
-# 🍁Alten Challenge | 🏖️Cancun Hotel Booking API | 👨🏾‍💻By Erik Lima
+# 🏖️Cancun Hotel Booking API | 👨🏾‍💻By Erik Lima
 
 ### 💻The challenge
 
@@ -125,7 +125,4 @@ The application is now online, hosted on the Heroku platform. APIs can be consum
 #### ✅ Localhost collection/request list (To import into Postman):
   ➡️ https://github.com/erikflima/Repository-Alten-Challenge-Hotel-api/blob/main/documentation-files/Postman%20files/Local%20-%20Requests%20-%20Cancun%20Hotel%20Booking%20API.postman_collection.json
 
----
 
-# Thanks🤓🍁
- #Never Give up!
